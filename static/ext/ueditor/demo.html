@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<script type="text/plain" name="content" id="editor">
+
+		</script>
+		<script src="ueditor.config.js" type="text/javascript" charset="utf-8"></script>
+		<script src="ueditor.all.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			UE.getEditor("editor", {
+				toolbars: [
+					[
+						'bold', //加粗
+						'indent', //首行缩进
+						'snapscreen', //截图
+						'italic', //斜体
+						'underline', //下划线
+						'strikethrough', //删除线
+						'subscript', //下标
+						'selectall', //全选
+						'horizontal', //分隔线
+						'removeformat', //清除格式
+						'unlink', //取消链接
+						'fontfamily', //字体
+						'fontsize', //字号
+						'paragraph', //段落格式
+						'simpleupload', //单图上传
+						'edittable', //表格属性
+						'link', //超链接
+						'emotion', //表情
+						'spechars', //特殊字符
+						'searchreplace', //查询替换
+						'map', //Baidu地图
+						'justifyleft', //居左对齐
+						'justifyright', //居右对齐
+						'justifycenter', //居中对齐
+						'justifyjustify', //两端对齐
+						'forecolor', //字体颜色
+						'backcolor', //背景色
+						'template', //模板
+					]
+				],
+				initialFrameHeight:400
+			})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://www.jq22.com/yanshi13214 -->
+<html style="padding-bottom: 54px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<title>jQuery多容器之间拖曳</title>
+<meta name="description" content="除了有一般拖曳的功能，还可以在不同容器之间拖曳。">
+<meta name="keywords" content="拖曳,不同容器之间拖曳,jquery,jquery插件">
+<link rel="Shortcut icon" href="http://www.jq22.com/favicon.ico">
+<link href="./jQuery多容器之间拖曳_files/demo.css" rel="stylesheet" media="all">
+<!--[if IE]>
+			
+			<style type="text/css">			
+				li.purchase a {
+					padding-top: 5px;
+					background-position: 0px -4px;
+				}
+				
+				li.remove_frame a {
+					padding-top: 5px;
+					background-position: 0px -3px;
+				}						
+			</style>
+			
+		<![endif]-->
+<style>
+        .fdad a{color:#000;display:inline-block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}.fdad{top:66px;}.xgcj li{font-size:14px;line-height:20px;list-style-type:none;transition:all 1s ease 0s;border-radius:5px;}.xgcj li:hover{background-color:#e4e4e4;}.xgcj{background-color:rgba(255,255,255,.3);overflow-x:hidden;}.xgcj ul{padding:10px}.xgcj h3{line-height:30px;}.xgcj p{padding-left:20px;font-size:13px;display:none;}.xgcj span{font-family:"宋体";}.xgcj li:hover p{display:block;}
+    </style>
+<script src="./jQuery多容器之间拖曳_files/osd.js.下载"></script><script src="./jQuery多容器之间拖曳_files/hm.js.下载"></script><script src="./jQuery多容器之间拖曳_files/f.txt"></script><script src="./jQuery多容器之间拖曳_files/f(1).txt" id="google_shimpl"></script><script type="text/javascript">
+        var txt = "";
+        window.g1 = txt.substr(0, 3);
+        window.g2 = txt.substr(0, 19);
+    </script>
+<script src="./jQuery多容器之间拖曳_files/pace.min.js.下载" charset="gbk"></script>
+<link href="./jQuery多容器之间拖曳_files/pace-theme-barber-shop.css" rel="stylesheet">
+<script src="./jQuery多容器之间拖曳_files/jquery.min.js.下载"></script>
+<script src="./jQuery多容器之间拖曳_files/jquery.qrcode.min.js.下载"></script>
+<script type="text/javascript">
+        var dqfl = "输入";
+        var theme_list_open = false;
+
+        $(document).ready(function () {
+            function fixHeight() {
+                var headerHeight = $("#switcher").height();
+                $("#iframe").attr("height", $(window).height() - 54 + "px");
+            }
+            $(window).resize(function () {
+                fixHeight();
+            }).resize();
+
+            $('.icon-monitor').addClass('active');
+
+            $(".icon-mobile-3").click(function () {
+                $("#by").css("overflow-y", "auto");
+                $('#iframe-wrap').removeClass().addClass('mobile-width-3');
+                $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+
+            $(".icon-mobile-2").click(function () {
+                $("#by").css("overflow-y", "auto");
+                $('#iframe-wrap').removeClass().addClass('mobile-width-2');
+                $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+               
+
+            $(".icon-mobile-1").click(function () {
+                $("#by").css("overflow-y", "auto");
+                $('#iframe-wrap').removeClass().addClass('mobile-width');
+                $('.icon-tablet,.icon-mobile,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+
+            $(".icon-tablet").click(function () {
+                $("#by").css("overflow-y", "auto");
+                $('#iframe-wrap').removeClass().addClass('tablet-width');
+                $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+
+            $(".icon-monitor").click(function () {
+                $("#by").css("overflow-y", "hidden");
+                $('#iframe-wrap').removeClass().addClass('full-width');
+                $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+
+            if (dqfl.indexOf("APP模板") != -1) {
+                $("#by").css("overflow-y", "auto");
+                $('#iframe-wrap').removeClass().addClass('mobile-width-2');
+                $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            }      
+        });
+    </script>
+<script type="text/javascript">
+        function Responsive($a) {
+            if ($a == true) $("#Device").css("opacity", "100");
+            if ($a == false) $("#Device").css("opacity", "0");
+            $('#iframe-wrap').removeClass().addClass('full-width');
+            $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+            $(this).addClass('active');
+            return false;
+        };
+    </script>
+<link rel="preload" href="./jQuery多容器之间拖曳_files/f(2).txt" as="script"><script type="text/javascript" src="./jQuery多容器之间拖曳_files/f(2).txt"></script></head>
+<body id="by" style="overflow-y: hidden" class="  pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+
+</div>
+</div>
+
+<div id="iframe-wrap">
+<iframe id="iframe" src="./jQuery多容器之间拖曳_files/jq22-drag201703291116.html" frameborder="0" width="100%" height="554px"></iframe>
+</div>
+<div class="fdad" style="display: none;">
+<div class="fdl">Advertisement</div>
+<div class="fdr">x</div>
+
+<script type="text/javascript">
+                $(document).ready(function () {
+                    $(".fdr").click(function () {
+                        $(".fdad").hide();
+                    });
+                });
+    </script>
+<script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?b3a3fc356d0af38b811a0ef8d50716b8";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+</div>
+</body>
+</html>
